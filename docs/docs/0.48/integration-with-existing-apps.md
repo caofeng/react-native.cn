@@ -185,6 +185,7 @@ target 'NumberTileGame' do
   # 但是如果你的结构不同，那你就要根据实际路径修改下面的`:path`
   pod 'React', :path => '../node_modules/react-native', :subspecs => [
     'Core',
+    'BatchedBridge',#最新的RN版本，必须导入这个模块
     'DevSupport', # 如果RN版本 >= 0.43，则需要加入此行才能开启开发者菜单
     'RCTText',
     'RCTNetwork',
